@@ -1,0 +1,42 @@
+/* MEDIA QUERIES */
+/* PARA TODOS LOS DISPOSITIVOS MÓVILES */
+@media (max-width: 767px) {
+    body {
+        height: 100%;
+    }
+
+    .music-player {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .song-info {
+        padding: 10px;
+    }
+
+    .song-title {
+        font-size: 16px;
+    }
+
+    .song-artist {
+        font-size: 14px;
+    }
+
+    .audio-controls {
+        padding: 10px;
+    }
+
+    .control-btn, .volume-btn {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .volume-slider {
+        margin: 0 5px;
+    }
+
+    .volume-percentage {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}

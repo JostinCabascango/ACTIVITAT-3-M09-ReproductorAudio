@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Diosa",
+    "artist": "Myke Towers",
+    "path": "audio/song1.mp3",
+    "duration": "3:24",
+    "img": "img/song1.jpg"
+  },
+  {
+    "name": "Tata",
+    "artist": "Eladio Carrión",
+    "path": "audio/song2.mp3",
+    "duration": "3:20",
+    "img": "img/song2.jpg"
+  },
+  {
+    "name": "Quevedo Song",
+    "artist": "Quevedo",
+    "path": "audio/song3.mp3",
+    "duration": "2:45",
+    "img": "img/song3.jpg"
+  }
+]

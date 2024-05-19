@@ -1,0 +1,31 @@
+# Ignorar archivos y directorios de configuración de IDE
+.idea/
+.vscode/
+
+# Ignorar archivos de compilación
+*.class
+*.jar
+
+# Ignorar archivos de dependencias
+lib/
+libs/
+
+# Ignorar archivos generados automáticamente
+bin/
+target/
+out/
+
+# Ignorar archivos de configuración de compilación
+build/
+.gradle/
+buildout/
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+*.temp
+*.swp
+
+# Ignorar archivos de configuración de sistema
+.DS_Store
+Thumbs.db

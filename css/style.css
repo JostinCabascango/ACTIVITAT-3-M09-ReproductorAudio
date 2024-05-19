@@ -1,0 +1,119 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.music-player {
+    background-color: #fff;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 50vw;
+    border-radius: 2vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.song-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 2vw;
+}
+
+.song-image {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.song-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.song-info {
+    padding: 2vw;
+    text-align: center;
+}
+
+.song-title {
+    margin-bottom: 1vw;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.song-artist {
+    color: #666;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.audio-controls {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    transition: background-color 0.3s ease;
+}
+
+.playback-controls, .volume-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.control-btn, .volume-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1vw;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.control-btn:hover, .volume-btn:hover {
+    color: #666;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+}
+
+.volume-slider {
+    margin: 0 1vw;
+    transition: background-color 0.3s ease;
+}
+
+.volume-percentage {
+    margin-left: 1vw;
+    font-size: 1em;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+#volume-icon.muted {
+    color: gray;
+}
+
+#volume-icon.unmuted {
+    color: black;
+}
