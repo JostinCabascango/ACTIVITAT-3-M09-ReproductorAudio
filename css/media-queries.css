@@ -1,12 +1,8 @@
-/* MEDIA QUERIES */
-/* PARA TODOS LOS DISPOSITIVOS MÓVILES */
+/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
-    body {
-        height: 100%;
-    }
-
     .music-player {
-        width: 95%;
+        width: 90%;
+        max-width: 90vw;
         border-radius: 10px;
     }
 
@@ -38,5 +34,92 @@
     .volume-percentage {
         margin-left: 5px;
         font-size: 12px;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .music-player {
+        width: 80%;
+        max-width: 80vw;
+    }
+
+    .song-title {
+        font-size: 20px;
+    }
+
+    .song-artist {
+        font-size: 18px;
+    }
+
+    .control-btn, .volume-btn {
+        font-size: 25px;
+    }
+
+    .volume-percentage {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1024px) {
+    .music-player {
+        width: 60%;
+        max-width: 60vw;
+    }
+
+    .song-title {
+        font-size: 24px;
+    }
+
+    .song-artist {
+        font-size: 20px;
+    }
+
+    .control-btn, .volume-btn {
+        font-size: 30px;
+    }
+
+    .volume-percentage {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para monitores grandes */
+@media (min-width: 1440px) {
+    .music-player {
+        width: 50%;
+        max-width: 50vw;
+        border-radius: 20px;
+    }
+
+    .song-info {
+        padding: 20px;
+    }
+
+    .song-title {
+        font-size: 28px;
+    }
+
+    .song-artist {
+        font-size: 24px;
+    }
+
+    .audio-controls {
+        padding: 20px;
+    }
+
+    .control-btn, .volume-btn {
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .volume-slider {
+        margin: 0 10px;
+    }
+
+    .volume-percentage {
+        margin-left: 10px;
+        font-size: 18px;
     }
 }

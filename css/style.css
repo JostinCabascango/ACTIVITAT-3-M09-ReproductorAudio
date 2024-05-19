@@ -8,11 +8,12 @@ body {
     align-items: center;
     height: 100vh;
     transition: background-color 0.3s ease;
+    color: #333;
 }
 
 .music-player {
     background-color: #fff;
-    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3vw rgba(0, 0, 0, 0.1);
     width: 90vw;
     max-width: 50vw;
     border-radius: 2vw;
@@ -20,6 +21,11 @@ body {
     grid-template-rows: auto 1fr auto;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    padding: 2vw;
+}
+
+.music-player:hover {
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.2);
 }
 
 .song-container {
@@ -30,8 +36,18 @@ body {
 
 .song-image {
     width: 100%;
-    padding-top: 100%;
+    padding-top: 90%;
     position: relative;
+    animation: spin 20s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .song-image img {
@@ -42,6 +58,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.3s ease;
+    border-radius: 50%;
 }
 
 .song-info {
@@ -91,6 +108,7 @@ body {
 
 .control-btn:hover, .volume-btn:hover {
     color: #666;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
 }
 
 .volume-control {
